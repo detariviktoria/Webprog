@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Félkarú Rabló</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎰 Félkarú rabló 🎰</h1>
+        <div class="controls">
+            <label>
+                Tét:
+                <input type="number" id="bet" min="100" max="5000" value="100" step="100">
+            </label>
+            <button id="play-btn">Játék indítása</button>
+        </div>
+
+        <ul class="slot-machine">
+
+        </ul>
+
+        <button id="stats-btn">Statisztikák mutatása/elrejtése!</button>
+
+        <div class="statistics">
+            <p>Legutóbbi nyeremény: <span id="winning">0</span></p>
+            <p>Aktuális pénz: <span id="total-money">12000</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

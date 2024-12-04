@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls label {
+    border: 1px solid #218838;
+    padding: 0.5em 0.5em;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.controls label:hover {
+    background-color: #218838;
+    cursor: pointer;
+}
+
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.slot-machine {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.slot-machine li {
+    width: 50px;
+    height: 50px;
+    background-color: #f9c74f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+.slot-machine img {
+    width: 100%;
+    padding: 5px;
+    border: 1px dashed black;
+}
+
+.result {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.container > button {
+    margin-bottom: 10px;
+}
+
+.statistics {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.statistics p {
+    margin: 0.5em;
+}
+
+.statistics.visible {
+    display: block;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+.hidden {
+    display: none;
+}
+
+ul, li, img {
+    background-color: white;
+}
+
+.winner img {
+    animation: scaling 1s infinite;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(120%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
